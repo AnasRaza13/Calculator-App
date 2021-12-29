@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator app</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>Calculator</h1>
+        <div class="inputbox">
+            <input type="text" placeholder="Enter value" id="input1">
+        </div>
+
+
+        <table>
+
+            <tr>
+                <td onclick="deleteOneNumber()"> <b>&lt;-</b></td>
+                <td onclick="clearScreen()"> <b>A</b>C</td>
+                <td onclick="getData('(')"> <b>(</b></td>
+                <td onclick="getData(')')"> <b>)</b></td>
+            </tr>
+            <tr>
+                <td onclick="getData('7')"> <b>7</b></td>
+                <td onclick="getData('8')"> <b>8</b></td>
+                <td onclick="getData('9')"> <b>9</b></td>
+                <td onclick="getData('/')" class="opt"> <b>/</b></td>
+            </tr>
+            <tr>
+                <td onclick="getData('4')"> <b>4</b></td>
+                <td onclick="getData('5')"> <b>5</b></td>
+                <td onclick="getData('6')"> <b>6</b></td>
+                <td onclick="getData('*')" class="opt"> <b>*</b></td>
+            </tr>
+            <tr>
+                <td onclick="getData('1')"> <b>1</b></td>
+                <td onclick="getData('2')"> <b>2</b></td>
+                <td onclick="getData('3')"> <b>3</b></td>
+                <td onclick="getData('-')" class="opt"> <b>-</b></td>
+            </tr>
+            <tr>
+                <td onclick="getData('0')"> <b>0</b></td>
+                <td onclick="getData('.')"> <b>.</b></td>
+                <td onclick="screenDisplay()" class="result"> <b>=</b></td>
+                <td onclick="getData('+')" class="opt"> <b>+</b></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
